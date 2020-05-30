@@ -1,0 +1,9 @@
+table,th{
+    border: 1px solid black;
+    background-color: plum;
+}
+td{
+    text-align: center;
+    display: inline-block;
+    background-color: skyblue;
+}
