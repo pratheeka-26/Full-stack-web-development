@@ -1,0 +1,36 @@
+.table,th,td{
+    border:2px solid blue;
+}
+table{
+    width:100%;
+}
+input[type=text],input[type=password]{
+    width:100%;
+    margin:8px;
+    padding:10px;
+    box-sizing: border-box;
+    border:2px solid brown;
+    border-radius:5px;
+    background-color: darkmagenta;
+    color:white;
+}
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    color:royalblue;
+}
+th,p{
+
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: normal;
+    text-align: center;
+}
+input[type=button]{
+    width: 100%;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bolder;
+    background-color: darkred;
+    color:wheat;
+}
