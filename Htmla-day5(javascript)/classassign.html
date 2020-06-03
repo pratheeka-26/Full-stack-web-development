@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mycheck()
+            {
+                var v1,v2;
+                v1=document.getElementById("txtusername").value;
+                v2=document.getElementById("txtpassword").value;
+                if(v1=="admin"&&v2=="admin")
+                {
+                    window.alert("Successful");
+                }
+                else{
+                    window.alert("Unsuccessful");
+                }
+
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        Username:<input type="text" id="txtusername"/><br/>
+        Password:<input type="password" id="txtpassword"/><brf/>
+        <button type="button" onclick="mycheck()">check</button>
+    </body>
+</html>
