@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rollnumber</title>
+        <script>
+            function validaterollno(){
+                var val=document.getElementById('txtrollno').value;
+                if(/[2][2][1][7][1][0][3][0][9][0-3][0-9][1-9]/.test(val)){
+                    window.alert('valid roll number');
+                }
+                else{
+                    window.alert('invalid roll number');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="email" id="txtrollno"/><br/>
+        <button type="button" onclick="validaterollno()">Validate</button>
+    </body>
+</html>

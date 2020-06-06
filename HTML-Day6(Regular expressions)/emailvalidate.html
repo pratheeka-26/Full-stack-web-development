@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EmailId</title>
+        <script>
+            function validateemailId(){
+                var val=document.getElementById('txtemailId').value;
+                if(/[a-zA-Z0-9._-]{6,12}[@][a-z]{3,15}[.][a-z]{2,6}/.test(val)){
+                    window.alert('valid emailid');
+                }
+                else{
+                    window.alert('invalid emailId');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="email" id="txtemailId"/><br/>
+        <button type="button" onclick="validateemailId()">Validate</button>
+    </body>
+</html>
