@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.4.1-dist\js\jQuery.min.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+        $("#btnaddclass").click(function(){
+            $("#div1").css("background-color","lightblue");
+        });
+        $("#btnaddcss1").click(function(){
+            $("#div1").css({
+                'background-color':'lightblue',
+                'color':'darkblue',
+                'font-size':'xx-large'
+            });
+        });
+    });
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <p>JQUERY</p>
+        </div>
+        <button type="button" id="btnaddcss">AddCssprop</button>
+        <button type="button" id="btnaddcss1">multicssprop</button>
+    </body>
+</html>

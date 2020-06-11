@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css" />
+        <script type="text/script" src="bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.4.1-dist\js\jQuery.min.js"></script>
+        <script type="text/javascript">
+       
+       
+       
+            $(document).ready(function(){
+                $("#btnLogin").click(function(){
+                    var val1 = ("#txtEmail").val();
+                    var val2 = ("#txtPassword").val();
+                    var p=/^[a-zA-Z0-9!@#$%]{6,12}$/;
+                    if(p.test(val1) && p.test(val2)){
+                        
+                            window.alert('valid');
+                    }
+                    else{
+                        $('input[type="text"]').css("border","2px solid red");
+                        window.alert('Invalid');
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="POST" id="validateLogin">
+                <div class="form-group">
+                    <label for="Username">Email</label>
+                    <input type="text" class="form-control" id="txtUsername" placeholder="Enter Username" />
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="text" class="form-control" id="txtPassword" placeholder="Enter Password" />
+                </div>
+                <button type="button" class="btn btn-primary" id="btnLogin">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

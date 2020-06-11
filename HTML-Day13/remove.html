@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.4.1-dist\js\jQuery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnremoveClass").click(function(){
+                    $("#div1").removeClass();
+                });
+            });
+        </script>
+        <style>
+            .a1{
+                background-color: black;
+                color: cadetblue;
+                font-size: x-small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+                text-align: left;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a1" id="div1">
+            <h1>This is web stck development</h1>
+        </div>
+        <div>
+            <button id="btnremoveClass" type="button">RemoveClass</button>
+        </div>
+    </body>
+</html>
